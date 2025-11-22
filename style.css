@@ -441,3 +441,93 @@ footer {
         opacity: 0.7;
     }
 }
+
+/* --- NEW ADDITIONS FOR UPDATED INDEX --- */
+
+/* Hero Terminal Box */
+.terminal-box-hero {
+    background: rgba(0, 0, 0, 0.6);
+    border-left: 2px solid var(--neon-cyan);
+    padding: 10px 15px;
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem;
+    max-width: 450px;
+}
+.cmd { color: var(--text-muted); display: block; margin-bottom: 4px; }
+.resp { color: var(--neon-cyan); animation: cursorBlink 2s infinite; }
+
+/* Right Panel Module Links */
+.module-link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+    text-decoration: none;
+    transition: padding 0.2s;
+}
+.module-link:hover { padding-left: 5px; }
+.mod-name { font-family: var(--font-mono); font-size: 0.75rem; color: #fff; letter-spacing: 1px; }
+.mod-arrow { color: var(--neon-cyan); font-size: 0.9rem; }
+.module-link.purple .mod-arrow { color: var(--neon-purple); }
+
+/* Workflow Diagram (Step 1 -> 2 -> 3) */
+.workflow-diagram {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-top: 2.5rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.flow-step {
+    flex: 1;
+    min-width: 200px;
+    text-align: center;
+    background: rgba(255,255,255,0.02);
+    padding: 1.5rem;
+    border-radius: 12px;
+    border: 1px solid rgba(255,255,255,0.05);
+}
+.step-icon {
+    width: 30px; height: 30px;
+    border-radius: 50%;
+    background: var(--neon-cyan);
+    color: #000;
+    font-weight: bold;
+    display: flex; align-items: center; justify-content: center;
+    margin: 0 auto 1rem;
+    font-family: var(--font-mono);
+}
+.flow-step h4 { color: #fff; margin-bottom: 0.5rem; font-family: var(--font-mono); }
+.flow-step p { font-size: 0.85rem !important; margin: 0; }
+.flow-arrow {
+    display: flex; align-items: center;
+    color: var(--text-muted);
+    font-size: 1.5rem;
+    padding-top: 3rem;
+    opacity: 0.5;
+}
+
+/* ASCII Diagram Box */
+.ascii-diagram {
+    font-family: var(--font-mono);
+    font-size: 0.7rem; /* Smaller to fit */
+    line-height: 1.2;
+    background: rgba(10, 15, 25, 0.95);
+    border: 1px solid var(--glass-border);
+    border-radius: 10px;
+    padding: 1.5rem;
+    color: var(--neon-cyan);
+    overflow-x: auto;
+    white-space: pre;
+    text-align: center;
+    box-shadow: inset 0 0 20px rgba(0,0,0,0.8);
+}
+
+/* Responsive adjustments for flow */
+@media (max-width: 768px) {
+    .workflow-diagram { flex-direction: column; }
+    .flow-arrow { transform: rotate(90deg); padding: 10px 0; width: 100%; justify-content: center; }
+}
