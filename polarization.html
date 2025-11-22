@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tacitus | The Prism Lab</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <canvas id="neural-canvas"></canvas>
+
+    <nav class="glass-panel">
+        <div class="logo">TACITUS<span class="logo-mark">◳</span><span class="highlight">_</span></div>
+        <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+        <div class="nav-links" id="nav-links">
+            <a href="index.html">Home</a>
+            <a href="platform.html">Conflict Intel</a>
+            <a href="polarization.html" class="active-highlight">The Prism</a>
+            <a href="analysis.html">Deep Analysis</a>
+            <a href="deployment.html">Deployment</a>
+            <a href="mailto:deploy@tacitus.me" class="btn-glow">Initialize</a>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero analysis-hero">
+            <div class="content-wrapper">
+                <div class="badge">LAB MODULE // BETA</div>
+                <h1 class="glitch-text" data-text="THE PRISM">THE PRISM</h1>
+                <p class="subtitle">
+                    A polarization and campaign intelligence lab for <span class="accent">contested questions</span>.
+                    Simulate how different audiences refract the same message across moral value clusters,
+                    and generate bridges that respect your opponent's fears instead of mocking them.
+                </p>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="section-label">01. AUDIENCE POLARIZATION ENGINE</div>
+            <div class="glass-card wide">
+                
+                <div class="grid-2">
+                    <div class="prism-input-col">
+                        <h4 class="hud-title">>> STEP 1: DEFINE STANCE</h4>
+                        <p class="code-text" style="margin-bottom:1rem;">Select a contentious topic to analyze:</p>
+                        
+                        <div class="topic-selector">
+                            <button class="btn-ghost small active">AI Regulation</button>
+                            <button class="btn-ghost small">Urban Density</button>
+                            <button class="btn-ghost small">Free Speech</button>
+                        </div>
+
+                        <div class="slider-group" style="margin-top: 2rem;">
+                            <label class="stat-label">YOUR INTENSITY</label>
+                            <input type="range" min="1" max="100" value="80" class="cyber-slider">
+                            <div class="slider-labels">
+                                <span>Moderate</span>
+                                <span>Radical</span>
+                            </div>
+                        </div>
+
+                        <div class="terminal-log" style="margin-top: 1.5rem;">
+                            <p>> detected_topic: "AI Safety"</p>
+                            <p>> current_frame: <span style="color:var(--neon-cyan)">"Innovation Risk"</span></p>
+                            <p>> <strong>OPPONENT_FRAME:</strong> "Existential Security"</p>
+                        </div>
+                    </div>
+
+                    <div class="prism-vis-col">
+                        <h4 class="hud-title">>> STEP 2: LATENT VALUE MAP</h4>
+                        
+                        <div class="radar-chart-container">
+                            <div class="radar-axis axis-1"></div>
+                            <div class="radar-axis axis-2"></div>
+                            <div class="radar-shape"></div>
+                            
+                            <span class="radar-label top">LIBERTY</span>
+                            <span class="radar-label right">LOYALTY</span>
+                            <span class="radar-label bottom">AUTHORITY</span>
+                            <span class="radar-label left">CARE</span>
+                        </div>
+                        
+                        <p class="stat-desc" style="text-align:center; margin-top:10px;">
+                            Your argument relies heavily on <strong>Liberty</strong> values.<br>
+                            Your opponent filters for <strong>Authority/Security</strong>.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="prism-output" style="margin-top: 3rem; border-top: 1px dashed var(--glass-border); padding-top: 2rem;">
+                    <h4 class="hud-title">>> STEP 3: THE COMMON GROUND GENERATOR</h4>
+                    <p style="color: var(--text-muted); margin-bottom: 1rem;">
+                        The system uses <span class="accent">Moral Reframing</span> to translate your argument into language 
+                        that resonates with your opponent's values, without compromising your core stance.
+                    </p>
+
+                    <div class="grid-2">
+                        <div class="card-cyber">
+                            <h4 style="color:#ff5555">❌ Why You Are Losing</h4>
+                            <p class="code-text">"We need open weights because freedom of speech is absolute."</p>
+                            <p class="stat-desc" style="color:#888; margin-top:5px;">(Rejects Opponent's fear of chaos)</p>
+                        </div>
+                        <div class="card-cyber" style="border-color: var(--neon-amber);">
+                            <h4 style="color:var(--neon-amber)">✅ The Nuanced Bridge</h4>
+                            <p class="code-text">"Open weights actually <strong>increase security</strong> (Authority) by allowing more eyes to catch vulnerabilities (Care) before bad actors exploit them."</p>
+                            <p class="stat-desc" style="color:var(--neon-amber); margin-top:5px;">(Validates Opponent's fear, uses it to support your goal)</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <section class="content-section">
+            <div class="section-label">02. APPLIED SCENARIOS</div>
+            <div class="glass-card wide">
+                <h3>>> How Practitioners Use Prism Lab</h3>
+                <div class="grid-3">
+                    <div class="card-cyber">
+                        <h4 style="color:var(--neon-amber);">National Campaign</h4>
+                        <p class="code-text">"AI Safety" vs "Innovation Freedom"</p>
+                        <p class="stat-desc">
+                            Model how swing voters, partisan bases, and expert communities react to the same slogan.
+                            Identify value collisions before launch and generate language that keeps coalitions intact.
+                        </p>
+                    </div>
+                    <div class="card-cyber">
+                        <h4 style="color:var(--neon-cyan);">NGO Advocacy</h4>
+                        <p class="code-text">Climate, migration, or digital rights</p>
+                        <p class="stat-desc">
+                            Stress‑test a briefing across skeptical ministries, local partners, and donors.
+                            Use Prism Lab to surface phrases that trigger backlash and alternatives that preserve dignity.
+                        </p>
+                    </div>
+                    <div class="card-cyber">
+                        <h4 style="color:var(--neon-purple);">Platform & Policy</h4>
+                        <p class="code-text">Trust & Safety, community standards</p>
+                        <p class="stat-desc">
+                            Compare how rules are heard by different ideological clusters.
+                            Generate enforcement narratives that defend guardrails without fueling martyrdom or culture‑war optics.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section" style="text-align: center;">
+            <a href="mailto:hello@tacitus.me?subject=Prism%20Lab%20Session" class="btn-accent">Book a Polarization Mapping Session</a>
+        </section>
+
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
